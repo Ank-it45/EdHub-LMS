@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Frontend build output
+frontend/dist/
+frontend/build/
+
+# Backend build/output
+backend/dist/
+backend/build/
+
+# Test and coverage output
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime / temporary files
+*.tmp
+*.temp
+.tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Local databases / database artifacts
+*.db
+*.sqlite
+*.sqlite3
+
+# Prisma local database artifacts
+prisma/*.db
+backend/prisma/*.db
+
+# Vite cache
+frontend/.vite/
+
+# Miscellaneous
+.cache/
+.parcel-cache/
