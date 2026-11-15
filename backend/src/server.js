@@ -15,10 +15,15 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Standard Middlewares
+const allowedOrigins = [
+  'http://localhost:5173',
+  process.env.CLIENT_URL
+].filter(Boolean);
+
 app.use(
   cors({
-    origin: '*',
-    credentials: true,
+    origin: allowedOrigins,
+    credentials: true
   })
 );
 app.use(express.json({ limit: '10mb' }));
